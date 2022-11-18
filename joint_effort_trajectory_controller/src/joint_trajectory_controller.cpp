@@ -751,7 +751,7 @@ bool get_ordered_interfaces(
     for (auto & interface : unordered_interfaces)
     {
       if (
-        (interface.get_name() == joint_name) && (interface.get_interface_name() == interface_type))
+        (interface.get_prefix_name() == joint_name) && (interface.get_interface_name() == interface_type))
       {
         ordered_interfaces.emplace_back(std::ref(interface));
       }
